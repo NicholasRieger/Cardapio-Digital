@@ -89,3 +89,24 @@ nav ul{
     padding: 8px;
     border-radius: 20px;
 }
+
+#lanches{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    line-height: 1.2;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+#lanches img{
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    margin: 10px 10px;
+    filter: drop-shadow(0.5px 0px 2px rgba(52, 51, 51, 0.426));
+}
