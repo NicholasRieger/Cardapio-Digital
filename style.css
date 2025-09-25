@@ -8,6 +8,11 @@
     font-family: "Tinos", serif;
 }
 
+html{
+  -webkit-text-size-adjust: none; /* alguns Androids só respeitam 'none' */
+  text-size-adjust: none;
+}
+
 body{
     font-size: 1em;
     background-color: #FFFBEE;
@@ -20,9 +25,6 @@ body{
     overflow-x: hidden;
     width: 100%;
 
-    /* >>> DESLIGA a inflação de fonte do Android/Chrome <<< */
-      -webkit-text-size-adjust: 100%;
-      text-size-adjust: 100%;
 }
 
 
