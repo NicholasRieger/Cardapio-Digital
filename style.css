@@ -19,6 +19,10 @@ body{
     /* modernos: viewport dinâmica (ajusta com barra) */
     overflow-x: hidden;
     width: 100%;
+
+    /* >>> DESLIGA a inflação de fonte do Android/Chrome <<< */
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
 }
 
 
