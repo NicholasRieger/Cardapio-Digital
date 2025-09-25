@@ -8,6 +8,20 @@
     font-family: "Tinos", serif;
 }
 
+body{
+    font-size: 1em;
+    background-color: lightgrey;
+    min-height: 100vh;
+    /* fallback universal */
+    min-height: 100svh;
+    /* Safari/iOS: viewport “pequena” estável */
+    min-height: 100dvh;
+    /* modernos: viewport dinâmica (ajusta com barra) */
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
 header{
     display: flex;
     justify-content: center;
@@ -57,6 +71,10 @@ nav ul{
 #whatsapp img{
     border-radius: 10px 0px 0px 10px;
     align-self: flex-end;
+    width: 45vw;
+    max-width: 235px;
+    height: 150px;
+    max-height: 150px;
 }
 
 #whatsapp a{
