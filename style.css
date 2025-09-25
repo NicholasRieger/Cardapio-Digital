@@ -10,7 +10,7 @@
 
 body{
     font-size: 1em;
-    background-color: lightgrey;
+    background-color: #FFFBEE;
     min-height: 100vh;
     /* fallback universal */
     min-height: 100svh;
