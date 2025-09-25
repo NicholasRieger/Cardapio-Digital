@@ -8,6 +8,7 @@
     font-family: "Tinos", serif;
 }
 
+/* Usar só em mobile first, desativar nas outras media queries */
 html{
   -webkit-text-size-adjust: none; /* alguns Androids só respeitam 'none' */
   text-size-adjust: none;
