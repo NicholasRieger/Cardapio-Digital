@@ -111,6 +111,10 @@ h3{
     text-align: center;
 }
 
+.titulo4{
+    margin-top: 10px;
+}
+
 #lanches{
     display: flex;
     flex-flow: column wrap;
