@@ -99,7 +99,7 @@ h3{
     font-size: 1.5em;
 }
 
-#lanches div{
+#lanches div, #bebidas div{
     padding: 5px;
     text-align: justify;
     background-color: #f1e9ce;
@@ -107,7 +107,7 @@ h3{
     box-shadow: 1px 1px 2px rgba(52, 51, 51, 0.226);
 }
 
-#lanches div h4{
+#lanches h4, #bebidas h4{
     text-align: center;
 }
 
@@ -130,7 +130,7 @@ h3{
     box-shadow: 1px 1px 5px rgba(52, 51, 51, 0.226);
 }
 
-.img-lanche{
+.img-lanches{
     border: 1px solid rgba(47, 46, 46, 0.368);
     border-radius: 5px;
     width: 250px;
@@ -138,3 +138,40 @@ h3{
     margin: 10px 10px;
     filter: drop-shadow(0.5px 1px 1px rgba(52, 51, 51, 0.426));
 }
+
+#bebidas{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    line-height: 1.2;
+    border: 1px solid rgba(47, 46, 46, 0.368);
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    box-shadow: 1px 1px 5px rgba(52, 51, 51, 0.226);
+}
+
+#bebidas div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 10px;
+    height: 150px;
+    width: 200px;
+}
+
+.img-bebidas{
+    width: 100px;
+    height: 100px;
+}
+
+#bebidas p{
+    margin-top: 3px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
