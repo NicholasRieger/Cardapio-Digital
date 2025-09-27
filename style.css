@@ -99,7 +99,7 @@ h3{
     font-size: 1.5em;
 }
 
-#lanches div, #bebidas div{
+#lanches div{
     padding: 5px;
     text-align: justify;
     background-color: #f1e9ce;
@@ -154,14 +154,30 @@ h3{
     box-shadow: 1px 1px 5px rgba(52, 51, 51, 0.226);
 }
 
-#bebidas div{
+#bebidas .bebidas-opcoes{
+    padding: 5px;
+    text-align: justify;
+    background-color: #f1e9ce;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(52, 51, 51, 0.226);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-flow: column nowrap;
     margin: 10px;
     height: 150px;
-    width: 200px;
+    width: 150px;
+}
+
+.bebidas-titulo{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin: 6px;
+    text-align: center;
+    background-color: #f1e9ce;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(52, 51, 51, 0.226);
 }
 
 .img-bebidas{
