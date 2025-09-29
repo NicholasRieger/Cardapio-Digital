@@ -109,16 +109,29 @@
     <!-- JS simples do menu -->
     <script>
         const menu = document.getElementById("menu");
+        const botaoMenu = document.querySelector(".material-symbols-outlined");
 
         // abre/fecha menu no mobile
-        function clickMenu() {
-            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        function clickMenu(){
+            if(menu.style.display === "block"){
+                menu.style.display = "none"
+                botaoMenu.style.display = "block"
+            } else {
+                menu.style.display = "block"
+                botaoMenu.style.display = "none"
+            }
         }
 
         // mostra menu ao redimensionar p/ telas grandes
         window.addEventListener("resize", () => {
-            if (window.innerWidth > 768) menu.style.display = "block";
-            else menu.style.display = "none";
+            if (window.innerWidth > 768) {
+                menu.style.display = "block";
+                botaoMenu.style.display = "none";
+            }
+            else{
+                menu.style.display = "none";
+                botaoMenu.style.display = "block";
+            }
         });
     </script>
 </body>
