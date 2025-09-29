@@ -134,7 +134,7 @@ h3 {
 /* ===== Bebidas =====
    ▶ SOMENTE os filhos diretos de #bebidas (os dois cartões)
    ▶ Nada de grid, nada de gap: só flexbox                 */
-#secao2{
+#bebidas, #doces{
     display: flex;
     /* coloca os cartões lado a lado */
     flex-flow: row wrap;
@@ -151,7 +151,7 @@ h3 {
 }
 
 /* cartões (filhos diretos) — repara no > */
-#secao2 >.secao2-card {
+.secao2-card {
     /* cada cartão ocupa metade da linha e cresce igual */
     flex: 1 1 0;
     display: flex;
