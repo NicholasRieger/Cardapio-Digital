@@ -137,7 +137,7 @@ h3 {
 #bebidas {
     display: flex;
     /* coloca os cartões lado a lado */
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: stretch;
     /* faz os cartões terem a MESMA altura */
@@ -155,7 +155,6 @@ h3 {
     /* cada cartão ocupa metade da linha e cresce igual */
     flex: 1 1 0;
     display: flex;
-    /* vira coluna flex interna */
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
