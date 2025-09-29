@@ -1,200 +1,148 @@
 @charset "UTF-8";
+/* fonte */
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Tinos", serif;
-}
+/* reset básico */
+*{ margin:0; padding:0; box-sizing:border-box; font-family:"Tinos",serif; }
 
-/* Usar só em mobile first, desativar nas outras media queries */
-html{
-  -webkit-text-size-adjust: none; /* alguns Androids só respeitam 'none' */
-  text-size-adjust: none;
-}
+/* mobile first: evita zoom automático */
+html{ -webkit-text-size-adjust:none; text-size-adjust:none; }
 
+/* base da página */
 body{
-    font-size: 1em;
-    background-color: #FFFBEE;
-    min-height: 100vh;
-    /* fallback universal */
-    min-height: 100svh;
-    /* Safari/iOS: viewport “pequena” estável */
-    min-height: 100dvh;
-    /* modernos: viewport dinâmica (ajusta com barra) */
-    overflow-x: hidden;
-    width: 100%;
-
+  font-size:1em;
+  background-color:#FFFBEE;
+  min-height:100dvh;    /* ocupa a tela toda */
+  overflow-x:hidden;
+  width:100%;
 }
 
-
+/* ===== Header ===== */
 header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    border-bottom: 1px solid rgba(72, 72, 72, 0.454);
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+  border-bottom:1px solid rgba(72,72,72,.45);
 }
+header span{ cursor:pointer; align-self:flex-end; }
+header h1{ margin:10px 0; }
+header ul{ margin-bottom:10px; }
+header li{ list-style:none; display:inline; margin:0 15px; }
+header li a{ text-decoration:none; color:black; }
+nav ul{ display:none; }
 
-header span{
-    cursor: pointer;
-    align-self: flex-end;
-}
-
-header h1{
-    margin: 10px 0;
-}
-header ul{
-    margin-bottom: 10px;
-}
-
-header li{
-    list-style: none;
-    display: inline;
-    margin: 0 15px;
-}
-
-header li a{
-    text-decoration: none;
-    color: black;
-}
-
-nav ul{
-    display: none;
-}
-
+/* ===== WhatsApp ===== */
 #whatsapp{
-    display: flex;
-    flex-flow: column wrap;
-    height: 150px;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 20px;
-    font-size: 1.5em;
-    border-bottom: 1px solid rgba(72, 72, 72, 0.454);
+  display:flex;
+  flex-flow:column wrap;
+  height:150px;
+  justify-content:space-around;
+  align-items:center;
+  padding-left:20px;
+  font-size:1.5em;
+  border-bottom:1px solid rgba(72,72,72,.45);
 }
-
-#whatsapp img{
-    border-radius: 10px 0px 0px 10px;
-    align-self: flex-end;
-    width: 45vw;
-    max-width: 235px;
-    height: 150px;
-    max-height: 150px;
-}
-
 #whatsapp a{
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: rgb(244, 238, 238);
-    background-color: #5E8058;
-    padding: 8px;
-    border-radius: 20px;
+  margin-bottom:10px;
+  text-decoration:none;
+  color:#F4EEEE;
+  background-color:#5E8058;
+  padding:8px;
+  border-radius:20px;
 }
 
-h3{
-    text-align: center;
-    margin: 10px 0 10px 0;
-    font-size: 1.5em;
-}
+/* títulos de seção */
+h3{ text-align:center; margin:10px 0; font-size:1.5em; }
 
-#lanches div{
-    padding: 5px;
-    text-align: justify;
-    background-color: #f1e9ce;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px rgba(52, 51, 51, 0.226);
-}
-
-#lanches h4, #bebidas h4{
-    text-align: center;
-}
-
-.titulo4{
-    margin-top: 10px;
-}
-
+/* ===== Lanches ===== */
 #lanches{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    line-height: 1.2;
-    border: 1px solid rgba(47, 46, 46, 0.368);
-    border-radius: 10px;
-    width: 90%;
-    padding: 10px;
-    margin: 10px auto;
-    box-shadow: 1px 1px 5px rgba(52, 51, 51, 0.226);
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+  margin:10px auto;
+  line-height:1.2;
+  border:1px solid rgba(47,46,46,.37);
+  border-radius:10px;
+  width:90%;
+  padding:10px;
+  box-shadow:1px 1px 5px rgba(52,51,51,.23);
 }
-
+#lanches div{
+  padding:5px;
+  text-align:justify;
+  background-color:#f1e9ce;
+  border-radius:5px;
+  box-shadow:1px 1px 2px rgba(52,51,51,.23);
+}
+#lanches h4{ text-align:center; }
+.titulo4{ margin-top:10px; }
 .img-lanches{
-    border: 1px solid rgba(47, 46, 46, 0.368);
-    border-radius: 5px;
-    width: 250px;
-    height: 180px;
-    margin: 10px 10px;
-    filter: drop-shadow(0.5px 1px 1px rgba(52, 51, 51, 0.426));
+  border:1px solid rgba(47,46,46,.37);
+  border-radius:5px;
+  width:250px; height:180px;
+  margin:10px;
+  filter:drop-shadow(.5px 1px 1px rgba(52,51,51,.43));
 }
 
+/* ===== Bebidas =====
+   ▶ SOMENTE os filhos diretos de #bebidas (os dois cartões)
+   ▶ Nada de grid, nada de gap: só flexbox                 */
 #bebidas{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    line-height: 1.2;
-    border: 1px solid rgba(47, 46, 46, 0.368);
-    border-radius: 10px;
-    width: 90%;
-    padding: 10px;
-    margin: 10px auto;
-    box-shadow: 1px 1px 5px rgba(52, 51, 51, 0.226);
+  display:flex;                 /* coloca os cartões lado a lado */
+  flex-flow:row nowrap;
+  justify-content:center;
+  align-items:stretch;          /* faz os cartões terem a MESMA altura */
+  width:90%;
+  margin:10px auto;
+  padding:10px;
+  line-height:1.2;
+  border:1px solid rgba(47,46,46,.37);
+  border-radius:10px;
+  box-shadow:1px 1px 5px rgba(52,51,51,.23);
 }
 
-#bebidas div{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(47, 46, 46, 0.368);
-    width: 45%;
-    height: 250px;
+/* cartões (filhos diretos) — repara no > */
+#bebidas > .bebida-card{
+  /* cada cartão ocupa metade da linha e cresce igual */
+  flex:1 1 0;
+  display:flex;                 /* vira coluna flex interna */
+  flex-direction:column;
+  align-items:center;
+  border:1px solid rgba(47,46,46,.37);
+  border-radius:8px;
+  margin:0 6px; 
+  padding:8px;
+  min-height:260px;
+  background:#fffdf5;
 }
 
+/* título dentro do cartão */
 .bebidas-titulo{
-    height: auto;
-    padding: 5px;
-    margin: 6px;
-    text-align: center;
-    background-color: #f1e9ce;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px rgba(52, 51, 51, 0.226);
+  padding:6px;
+  margin-bottom:8px;
+  text-align:center;
+  background-color:#f1e9ce;
+  border-radius:5px;
+  box-shadow:1px 1px 2px rgba(52,51,51,.23);
 }
 
 .img-bebidas{
-    border: 1px solid rgba(47, 46, 46, 0.368);
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    filter: drop-shadow(0.5px 1px 1px rgba(52, 51, 51, 0.426));
+  border:1px solid rgba(47,46,46,.37);
+  border-radius:5px;
+  width:110px; 
+  height:110px;    /* tamanhos coerentes entre cartões */
+  filter:drop-shadow(.5px 1px 1px rgba(52,51,51,.43));
 }
 
-#bebidas .bebidas-paragrafo{
-    margin-top: 3px;
-    width: 90%;
-    height:  auto;
-    font-size: 0.9em;
-    text-align: center;
-    padding: 5px;
-    background-color: #f1e9ce;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px rgba(52, 51, 51, 0.226);
-    display: flex;
-    align-items: center;
-    flex-flow: column nowrap;
-    margin: 10px;
+/* bloco de texto do cartão */
+.bebidas-paragrafo{
+  margin-top:auto;
+  width:90%;
+  text-align:center;
+  padding:6px;
+  background-color:#f1e9ce;
+  border-radius:5px;
+  box-shadow:1px 1px 2px rgba(52,51,51,.23);
 }
-

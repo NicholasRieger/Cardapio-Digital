@@ -1,108 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio Digital</title>
-    <link rel="stylesheet" href="style.css?v=2">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <meta charset="UTF-8"><!-- define acentuação -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- mobile -->
+  <title>Cardápio Digital</title>
+  <!-- seu CSS -->
+  <link rel="stylesheet" href="style.css?v=3">
+  <!-- ícone do menu -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu">
 </head>
-
 <body>
-    <header>
-        <h1>Restaurante do Nicholas</h1>
-        <span class="material-symbols-outlined" onclick="clickMenu()" onresize="mudouTamanho()" >menu</span>
+  <!-- topo -->
+  <header>
+    <h1>Restaurante do Nicholas</h1>
+    <!-- botão do menu (mobile) -->
+    <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
 
-        <nav>
-            <ul id="menu">
-                <li><a href="#lanches">Lanches</a></li>
-                <li><a href="#bebidas">Bebidas</a></li>
-                <li><a href="#doces">Doces</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr id="linha-header">
-    <main>
-        <section id="whatsapp">
-            <h2>Cardápio Digital</h2>
-            <a href="https://api.whatsapp.com/send?phone=55999999999&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido!" target="_blank">Peça pelo WhatsApp</a>
-        </section>
-        <h3>Lanches</h3>
-        <section id="lanches">
-            <div>
-                <h4>Lanche vegano <br> (R$34)</h4>
-            </div>
-            <img src="imagens/hamburguer-vegano.jpg" alt="Lanche Vegano" class="img-lanches">
-            <div>
-                <p>Pão artesanal, hambúrguer de grão de bico (100g), pasta de lentilha, tomate e molho de mostarda.</p>
-            </div>
-            <div class="titulo4">
-                <h4 >Hamburguer da casa <br> (R$34)</h4>
-            </div>
-            <img src="imagens/hamburguer.jpg" alt="Hamburguer" class="img-lanches">
-            <div>
-                <p>Pão com gergelim tostado, hambúrguer (100g), alface, tomate, molho de queijo cheddar, bacon e molho da casa</p>
-            </div>
-            <div class="titulo4">
-                <h4 >X-Salada <br> (R$30)</h4>
-            </div>
-            <img src="imagens/xsalada.jpg" alt="X-Salada" class="img-lanches">
-            <div>
-                <p>Pão com gergelim tostado, tiras de frango (100g), alface, tomate, picles, queijo prato e maionese caseira.</p>
-            </div>
-        </section>
-        <h3>Bebidas</h3>
-        <section id="bebidas">
-            <div>
-                <div class="bebidas-titulo">
-                    <h4>Coca-Cola <br> (R$8)</h4>
-                </div>
-                <img src="imagens/cocaRED.jpg" alt="Coca-Cola" class="img-bebidas">
-                <div class="bebidas-paragrafo">
-                    <p>Coca-cola normal ou zero</p>
-                </div>
-            </div>
-            <div>
-                <div class="bebidas-titulo">
-                    <h4>Sucos <br> (R$10)</h4>
-                </div>
-                <img src="imagens/sucosRED.jpg" alt="Sucos" class="img-bebidas">
-                <div class="bebidas-paragrafo">
-                    <p>Opções: Morango, Limão, Abacaxi com Hortelã</p>
-                </div>
-            </div>
-        </section>
-        <section id="doces">
+    <!-- navegação -->
+    <nav>
+      <ul id="menu">
+        <li><a href="#lanches">Lanches</a></li>
+        <li><a href="#bebidas">Bebidas</a></li>
+        <li><a href="#doces">Doces</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </section>
-    </main>
-    <footer>
+  <!-- separador visual -->
+  <hr id="linha-header">
 
-    </footer>
-    <script>
-        const menu = document.getElementById("menu")
-        const span = document.querySelector("span")
+  <main>
+    <!-- bloco WhatsApp -->
+    <section id="whatsapp">
+      <h2>Cardápio Digital</h2>
+      <a href="https://api.whatsapp.com/send?phone=55999999999&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido!" target="_blank">
+        Peça pelo WhatsApp
+      </a>
+    </section>
 
-        function clickMenu(){
-            if(menu.style.display === "block"){
-                menu.style.display = "none"
-            } else {
-                menu.style.display = "block"
-            }
-        
-        }
+    <!-- LANCHES -->
+    <h3>Lanches</h3>
+    <section id="lanches">
+      <!-- item 1 -->
+      <div>
+        <h4>Lanche vegano <br>(R$34)</h4>
+      </div>
+      <img src="imagens/hamburguer-vegano.jpg" alt="Lanche Vegano" class="img-lanches">
+      <div>
+        <p>Pão artesanal, hambúrguer de grão de bico (100g), pasta de lentilha, tomate e molho de mostarda.</p>
+      </div>
 
-                function mudouTamanho(){
-            if(window.innerWidth > 768){
-                menu.style.display = "block"
-            } else {
-                menu.style.display = "none"
-            }
-        }
+      <!-- item 2 -->
+      <div class="titulo4">
+        <h4>Hamburguer da casa <br>(R$34)</h4>
+      </div>
+      <img src="imagens/hamburguer.jpg" alt="Hamburguer" class="img-lanches">
+      <div>
+        <p>Pão com gergelim tostado, hambúrguer (100g), alface, tomate, molho de queijo cheddar, bacon e molho da casa.</p>
+      </div>
 
-    </script>
+      <!-- item 3 -->
+      <div class="titulo4">
+        <h4>X-Salada <br>(R$30)</h4>
+      </div>
+      <img src="imagens/xsalada.jpg" alt="X-Salada" class="img-lanches">
+      <div>
+        <p>Pão com gergelim tostado, tiras de frango (100g), alface, tomate, picles, queijo prato e maionese caseira.</p>
+      </div>
+    </section>
+
+    <!-- BEBIDAS -->
+    <h3>Bebidas</h3>
+    <section id="bebidas">
+      <!-- CARTÃO 1 (filho direto do #bebidas) -->
+      <div class="bebida-card">
+        <div class="bebidas-titulo">
+          <h4>Coca-Cola <br>(R$8)</h4>
+        </div>
+
+        <img src="imagens/cocaRED.jpg" alt="Coca-Cola" class="img-bebidas">
+
+        <!-- margin-top:auto empurra este bloco para o rodapé do cartão -->
+        <div class="bebidas-paragrafo">
+          <p>Coca-cola normal ou zero</p>
+        </div>
+      </div>
+
+      <!-- CARTÃO 2 (filho direto do #bebidas) -->
+      <div class="bebida-card">
+        <div class="bebidas-titulo">
+          <h4>Sucos <br>(R$10)</h4>
+        </div>
+
+        <img src="imagens/sucosRED.jpg" alt="Sucos" class="img-bebidas">
+
+        <div class="bebidas-paragrafo">
+          <p>Opções: Morango, Limão, Abacaxi com Hortelã</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="doces"><!-- futuro --></section>
+  </main>
+
+  <footer><!-- rodapé --></footer>
+
+  <!-- JS simples do menu -->
+  <script>
+    const menu = document.getElementById("menu");
+
+    // abre/fecha menu no mobile
+    function clickMenu() {
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    // mostra menu ao redimensionar p/ telas grandes
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) menu.style.display = "block";
+      else menu.style.display = "none";
+    });
+  </script>
 </body>
-
 </html>
