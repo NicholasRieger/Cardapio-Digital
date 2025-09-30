@@ -42,6 +42,7 @@ header span {
 
 header h1 {
     margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(52, 51, 51, .43);
 }
 
 header ul {
@@ -73,6 +74,7 @@ nav ul {
     padding-left: 20px;
     font-size: 1.5em;
     border-bottom: 1px solid rgba(72, 72, 72, .45);
+    text-shadow: 1px 1px 2px rgba(52, 51, 51, .43);
 }
 
 #whatsapp a {
@@ -82,6 +84,7 @@ nav ul {
     background-color: #5E8058;
     padding: 8px;
     border-radius: 20px;
+    
 }
 
 /* títulos de seção */
@@ -89,6 +92,7 @@ h3 {
     text-align: center;
     margin: 10px 0;
     font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(52, 51, 51, .43);
 }
 
 /* ===== Lanches ===== */
@@ -106,16 +110,30 @@ h3 {
     box-shadow: 1px 1px 5px rgba(52, 51, 51, .23);
 }
 
+.secao1-card{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFBEE;
+    margin: 10px 6px;
+    padding: 8px;
+    min-height: 350px;
+}
+
 #lanches div {
+    background-color: #F1E9CE;
     padding: 5px;
     text-align: justify;
-    background-color: #f1e9ce;
+    background-color: #FFFBEE;
     border-radius: 5px;
     box-shadow: 1px 1px 2px rgba(52, 51, 51, .23);
 }
 
-#lanches h4 {
+#lanches .titulo4{
     text-align: center;
+    background-color: #F1E9CE;
 }
 
 .titulo4 {
@@ -129,6 +147,10 @@ h3 {
     height: 180px;
     margin: 10px;
     filter: drop-shadow(.5px 1px 1px rgba(52, 51, 51, .43));
+}
+
+#lanches .paragrafo-lanches{ 
+    background-color: #F1E9CE; 
 }
 
 /* ===== Bebidas ===== */
@@ -145,7 +167,7 @@ h3 {
     line-height: 1.2;
     border: 1px solid rgba(47, 46, 46, .37);
     border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(52, 51, 51, .23);
+    box-shadow: 1px 1px 2px rgba(52, 51, 51, .23);;
 }
 
 /* cartões (filhos diretos) — repara no > */
@@ -160,6 +182,8 @@ h3 {
     margin: 0 6px;
     padding: 8px;
     min-height: 260px;
+    border: 0.5px solid rgba(47, 46, 46, 0.098);
+    box-shadow: 1px 1px 2px rgba(52, 51, 51, .23);
 }
 
 /* título dentro do cartão */
@@ -192,10 +216,41 @@ h3 {
     box-shadow: 1px 1px 2px rgba(52, 51, 51, .23);
 }
 
+footer{
+    text-align: center;
+    background-color: #5E8058;
+    width: 100vw;
+}
+
+footer p{
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #4a6146;
+    padding: 3px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer ul{
+    text-align: center;
+    padding: 2px;
+}
+
+footer li{
+    margin: 5px;
+}
+
 @media only screen and (min-width: 992px) {
     .material-symbols-outlined{
         display: none !important;
     }
+
+    #menu {
+        display: block;
+    }
+
     #lanches{
         flex-direction: row;
     }

@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css?v=2">
     <!-- ícone do menu -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call" />
 </head>
 
 <body>
+    
     <header>
         <h1>Restaurante do Nicholas</h1>
         <!-- botão do menu (mobile) -->
@@ -41,32 +43,38 @@
         <h3>Lanches</h3>
         <section id="lanches">
             <!-- item 1 -->
-            <div>
-                <h4>Lanche vegano <br>(R$34)</h4>
-            </div>
-            <img src="imagens/Lanches/hamburguer-vegano.jpg" alt="Lanche Vegano" class="img-lanches">
-            <div>
-                <p>Pão artesanal, hambúrguer de grão de bico (100g), pasta de lentilha, tomate e molho de mostarda.</p>
+            <div class="secao1-card">
+                <div class="titulo4">
+                    <h4>Lanche vegano <br>(R$34)</h4>
+                </div>
+                <img src="imagens/Lanches/hamburguer-vegano.jpg" alt="Lanche Vegano" class="img-lanches">
+                <div class="paragrafo-lanches">
+                    <p>Pão artesanal, hambúrguer de grão de bico (100g), pasta de lentilha, tomate e molho de mostarda.</p>
+                </div>
             </div>
 
             <!-- item 2 -->
-            <div class="titulo4">
-                <h4>Hamburguer da casa <br>(R$34)</h4>
-            </div>
-            <img src="imagens/Lanches/hamburguer.jpg" alt="Hamburguer" class="img-lanches">
-            <div>
-                <p>Pão com gergelim tostado, hambúrguer (100g), alface, tomate, molho de queijo cheddar, bacon e molho
-                    da casa.</p>
+            <div class="secao1-card">
+                <div class="titulo4">
+                    <h4>Hamburguer da casa <br>(R$34)</h4>
+                </div>
+                <img src="imagens/Lanches/hamburguer.jpg" alt="Hamburguer" class="img-lanches">
+                <div class="paragrafo-lanches">
+                    <p>Pão com gergelim tostado, hambúrguer (100g), alface, tomate, molho de queijo cheddar, bacon e molho
+                        da casa.</p>
+                </div>
             </div>
 
             <!-- item 3 -->
-            <div class="titulo4">
-                <h4>X-Salada <br>(R$30)</h4>
-            </div>
-            <img src="imagens/Lanches/xsalada.jpg" alt="X-Salada" class="img-lanches">
-            <div>
-                <p>Pão com gergelim tostado, tiras de frango (100g), alface, tomate, picles, queijo prato e maionese
-                    caseira.</p>
+            <div class="secao1-card">
+                <div class="titulo4">
+                    <h4>X-Salada <br>(R$30)</h4>
+                </div>
+                <img src="imagens/Lanches/xsalada.jpg" alt="X-Salada" class="img-lanches">
+                <div class="paragrafo-lanches">
+                    <p>Pão com gergelim tostado, tiras de frango (100g), alface, tomate, picles, queijo prato e maionese
+                        caseira.</p>
+                </div>
             </div>
         </section>
 
@@ -159,7 +167,15 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+
+        <ul>
+            <li>&#x260E;&#xFE0E; Contato (11)99999-9999</li>
+            <li>&#x1F4CD;&#xFE0E;<adress> Rua ABC, 123</adress></li>
+            <li>&#x23F0;&#xFE0E; Aberto de segunda a sexta, das 11h às 22h</li>
+        </ul>
+        <p>Desenvolvido por <strong>Nicholas Rieger</strong> - Todos os direitos reservados © 2025</p>
+    </footer>
 
     <!-- JS simples do menu -->
     <script>
