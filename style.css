@@ -71,7 +71,6 @@ nav ul {
     height: 150px;
     justify-content: space-around;
     align-items: center;
-    padding-left: 20px;
     font-size: 1.5em;
     border-bottom: 1px solid rgba(72, 72, 72, .45);
     text-shadow: 1px 1px 2px rgba(52, 51, 51, .43);
