@@ -83,10 +83,6 @@ header li a {
     color: var(--texto);
 }
 
-nav ul {
-    display: none;
-}
-
 /* ===== WhatsApp ===== */
 #whatsapp {
     display: flex;
