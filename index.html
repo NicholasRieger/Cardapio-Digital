@@ -17,9 +17,6 @@
     
     <header>
         <h1>Restaurante do Nicholas</h1>
-        <!-- botão do menu (mobile) -->
-        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <!-- navegação -->
         <nav>
             <ul id="menu">
                 <li><a href="#lanches">Lanches</a></li>
@@ -175,34 +172,6 @@
         </ul>
         <p>Desenvolvido por <strong>Nicholas Rieger</strong> - Todos os direitos reservados © 2025</p>
     </footer>
-
-    <!-- JS simples do menu -->
-    <script>
-        const menu = document.getElementById("menu");
-        const botaoMenu = document.querySelector(".material-symbols-outlined");
-
-        // abre/fecha menu no mobile
-        function clickMenu() {
-            if (menu.style.display === "block") {
-                menu.style.display = "none"
-                botaoMenu.style.display = "block"
-            } else {
-                menu.style.display = "block"
-                botaoMenu.style.display = "none"
-            }
-        }
-
-        // mostra menu ao redimensionar p/ telas grandes
-        window.addEventListener("resize", () => {
-            if (window.innerWidth > 768) {
-                menu.style.display = "block";
-                botaoMenu.style.display = "none";
-            }
-            else {
-                menu.style.display = "none";
-                botaoMenu.style.display = "block";
-            }
-        });
     </script>
 </body>
 
