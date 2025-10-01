@@ -32,13 +32,6 @@
     box-sizing: border-box;
     font-family: "Tinos", serif;
 }
-
-/* mobile first: evita zoom automático */
-html {
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-}
-
 /* base da página */
 body {
     font-size: 1em;
