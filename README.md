@@ -117,7 +117,6 @@ Cardapio-Digital/
 * [ ] Adicionar **Grid CSS** para versão desktop mais flexível.
 * [ ] Implementar **Dark Mode** (`prefers-color-scheme`).
 * [ ] Campo de **busca** por item e ancoragem por categoria.
-* [ ] 
 ---
 
 ## Contribuição
@@ -132,7 +131,7 @@ Cardapio-Digital/
 
 ## Licença
 
-Distribuído sob a licença **MIT**. Adicione o arquivo `LICENSE` ao repositório.
+Distribuído sob a licença **MIT**.
 
 ---
 
