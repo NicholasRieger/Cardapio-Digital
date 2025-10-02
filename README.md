@@ -137,5 +137,9 @@ Distribuído sob a licença **MIT**.
 
 ## Autor
 
-**Nicholas Rieger** — Aberto a feedbacks!
+**Nicholas Gabriel Rieger** — Aberto a feedbacks!
 Issues e sugestões são bem‑vindas no repositório.
+
+## Créditos
+
+- **[Laura Pietra]** — QA: testou em iOS e Tablet, deu feedbacks de responsividade.
