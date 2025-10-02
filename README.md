@@ -7,9 +7,7 @@
 <p align="left">
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-%23E34F26" />
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-%231572B6" />
-  <a href="https://nicholasrieger.github.io/Cardapio-Digital/"><img alt="Deploy" src="https://img.shields.io/badge/deploy-GitHub%20Pages-black" /></a>
-  <img alt="Status" src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow" />
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen" />
+
 </p>
 
 ---
