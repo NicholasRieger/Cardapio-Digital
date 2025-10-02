@@ -7,9 +7,7 @@
 <p align="left">
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-%23E34F26" />
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-%231572B6" />
-  <a href="https://nicholasrieger.github.io/Cardapio-Digital/"><img alt="Deploy" src="https://img.shields.io/badge/deploy-GitHub%20Pages-black" /></a>
-  <img alt="Status" src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow" />
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen" />
+
 </p>
 
 ---
@@ -119,7 +117,6 @@ Cardapio-Digital/
 * [ ] Adicionar **Grid CSS** para versão desktop mais flexível.
 * [ ] Implementar **Dark Mode** (`prefers-color-scheme`).
 * [ ] Campo de **busca** por item e ancoragem por categoria.
-* [ ] 
 ---
 
 ## Contribuição
@@ -134,11 +131,15 @@ Cardapio-Digital/
 
 ## Licença
 
-Distribuído sob a licença **MIT**. Adicione o arquivo `LICENSE` ao repositório.
+Distribuído sob a licença **MIT**.
 
 ---
 
 ## Autor
 
-**Nicholas Rieger** — Aberto a feedbacks!
+**Nicholas Gabriel Rieger** — Aberto a feedbacks!
 Issues e sugestões são bem‑vindas no repositório.
+
+## Créditos
+
+- **[Laura Pietra]** — QA: testou em iOS e Tablet, deu feedbacks de responsividade.
